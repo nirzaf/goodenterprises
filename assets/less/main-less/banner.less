@@ -1,0 +1,210 @@
+/* ==== Main CSS === */
+.img-fill{
+  width: 100%;
+  display: block;
+  overflow: hidden;
+  position: relative;
+  text-align: center
+}
+
+.img-fill img {
+  min-height: 100%;
+  min-width: 100%;
+  position: relative;
+  display: inline-block;
+  max-width: none;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.04);
+}
+
+.Grid1k {
+  padding: 0 15px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.blocks-box,
+.slick-slider {
+  margin: 0;
+  padding: 0!important;
+}
+
+.slick-slide {
+  float: left /* If RTL Make This Right */ ;
+  padding: 0;
+}
+
+/* ==== Slider Style === */
+.Modern-Slider .item .img-fill{
+  height:100vh;
+  background:#000;
+}
+
+.Modern-Slider .item .img-fill .info {
+  position:absolute;
+  width:100%;
+  height:100%;
+  top:0px;
+  left:0px;
+  line-height:90vh;
+  text-align:center;
+  @media (max-width: @screen-sm-max) {
+    line-height: 100vh;
+  }
+}
+
+.Modern-Slider .item .info > div{
+  display:inline-block!important;
+  vertical-align:middle;
+}
+
+.Modern-Slider .NextArrow{
+  outline: none;
+  cursor: pointer;
+  position:absolute;
+  top:50%;
+  right:0px;
+  width:45px;
+  height:45px;
+  background:rgba(0,0,0,.50);
+  border:0 none;
+  margin-top:-22.5px;
+  text-align:center;
+  font:20px/45px FontAwesome;
+  color:#FFF;
+  z-index:5;
+  transition: all 0.5s;
+}
+.Modern-Slider .NextArrow:hover {
+  background: @secondary-color;
+}
+
+.Modern-Slider .NextArrow:before{content:'\f105';}
+
+.Modern-Slider .PrevArrow{
+  outline: none;
+  cursor: pointer;
+  position:absolute;
+  top:50%;
+  left:0px;
+  width:45px;
+  height:45px;
+  background:rgba(0,0,0,.50);
+  border:0 none;
+  margin-top:-22.5px;
+  text-align:center;
+  font:20px/45px FontAwesome;
+  color:#FFF;
+  z-index:5;
+  transition: all 0.5s;
+}
+.Modern-Slider .PrevArrow:hover {
+  background: @secondary-color;
+}
+
+.Modern-Slider .PrevArrow:before{content:'\f104';}
+
+.Modern-Slider .slick-dots{
+  position:absolute;
+  height:5px;
+  background:rgba(255,255,255,.20);
+  bottom:0px;
+  width:100%;
+  left:0px;
+  padding:0px;
+  margin:0px;
+  list-style-type:none;
+}
+.Modern-Slider .slick-dots li button{display:none;}
+.Modern-Slider .slick-dots li{
+  float:left;
+  width:0px;
+  height:5px;
+  background:@secondary-color;
+  position:absolute;
+  left:0px;
+  bottom:0px;
+}
+
+.Modern-Slider .slick-dots li.slick-active{
+  width:100%;
+  animation:ProgressDots 11s both;
+}
+
+.Modern-Slider .item h3{
+  text-transform:uppercase;
+  color:#FFF;
+  animation:fadeOutRight 1s both;
+  margin-top: 15px;
+  margin-bottom: 30px;
+  font-size: 36px;
+  padding:0;
+  font-weight: 700;
+  em {
+    color: @secondary-color;
+    font-style: normal;
+  }
+}
+
+.Modern-Slider .item h5 {
+  font-weight: 300;
+  margin: 0;
+    padding:0;
+    color:#FFF;
+    max-width:600px;
+    overflow:hidden;
+    animation:fadeOutLeft 1s both;
+}
+.Modern-Slider .item .secondary-button {
+  animation:bounceOut 1s both;
+}
+
+.Modern-Slider .item.slick-active h3{
+  animation:fadeInDown 1s both 1s;
+}
+
+.Modern-Slider .item.slick-active h5{
+  animation:fadeInLeft 1s both 1.5s;
+}
+
+.Modern-Slider .item.slick-active .secondary-button{
+  animation:bounceIn 1s both 2.0s;
+}
+
+.Modern-Slider .item img{
+  animation:Slick-SlideOut 1s both;
+}
+
+.Modern-Slider .item.slick-active img{
+  animation:Slick-SlideIn 1s both;
+}
+
+
+/* ==== Slider Image Transition === */
+@keyframes Slick-SlideIn{from{transform:rotate3d(0,1,0,-60deg) skewX(10deg)  perspective(400px);}to{transform:rotate3d(0,1,0,0deg) skewX(0deg)  perspective(400px);} }
+@keyframes Slick-SlideOut{from{transform:rotate3d(0,1,0,0deg) skewX(0deg) perspective(400px);} to{transform:rotate3d(0,1,0,-60deg) skewX(10deg) perspective(400px);} }
+
+@-webkit-keyframes ProgressDots{from{width:0px;}to{width:100%;}}
+@keyframes ProgressDots{from{width:0px;}to{width:100%;}}
+
+/* ==== Slick Slider Css Ruls === */
+.slick-slider{position:relative;display:block;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;-webkit-touch-callout:none;-khtml-user-select:none;-ms-touch-action:pan-y;touch-action:pan-y;-webkit-tap-highlight-color:transparent}
+.slick-list{position:relative;display:block;overflow:hidden;margin:0;padding:0}
+.slick-list:focus{outline:none}.slick-list.dragging{cursor:hand}
+.slick-slider .slick-track,.slick-slider .slick-list{-webkit-transform:translate3d(0,0,0);-ms-transform:translate3d(0,0,0);transform:translate3d(0,0,0)}
+.slick-track{position:relative;top:0;left:0;display:block}
+.slick-track:before,.slick-track:after{display:table;content:''}.slick-track:after{clear:both}
+.slick-loading .slick-track{visibility:hidden}
+.slick-slide{display:none;float:left /* If RTL Make This Right */ ;height:100%;min-height:1px}
+.slick-slide.dragging img{pointer-events:none}
+.slick-initialized .slick-slide{display:block}
+.slick-loading .slick-slide{visibility:hidden}
+.slick-vertical .slick-slide{display:block;height:auto;border:1px solid transparent}

@@ -1,0 +1,84 @@
+.testimonials {
+	background-color: @bg-light;
+	margin-top: -30px;
+	.item {
+		margin: 60px 15px 30px 15px;
+		padding: 30px 30px 45px 30px;
+		text-align: left;
+		background-color: @bg-light;
+		border-radius: 5px;
+		box-shadow: 0px 0px 20px rgba(0,0,0,0.15);
+		ul {
+			padding: 0;
+			margin: 0;
+			list-style: none;
+			li {
+				display: inline-block;
+				color: @secondary-color;
+			}
+			li:last-child {
+				color: #cdcdcd;
+			}
+		}
+		p {
+			margin-top: 15px;
+		}
+		img {
+			float: left;
+			margin-right: 15px;
+			margin-top: 15px;
+			border-radius: 50%;
+			width: 70px!important;
+			height: 70px;
+			overflow: hidden;
+		}
+		h4 {
+			display: inline-block;
+			margin-top: 30px;
+			font-size: 13px;
+			font-weight: 700;
+			text-transform: uppercase;
+			margin-bottom: 0px;
+		}
+		span {
+			display: inline-block;
+			font-size: 12px;
+			font-weight: 400;
+			color: @primary-color;
+		}
+		.line-dec {
+			margin-top: 15px;
+			width: 40px;
+			height: 2px;
+			background-color: #ddd;
+		}
+	}
+}
+
+.owl-nav {
+	display: none;
+}
+
+.owl-dots {
+	padding-bottom: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+.owl-theme .owl-dots .owl-dot {
+	width: 12px;
+	height: 12px;
+	border-radius: 0px!important;
+	margin-top: 12px!important;
+	border-radius: 50%!important;
+	border: 3px solid #aaa!important;
+	outline: none;
+	margin: 0px 3px;
+}
+
+.owl-theme .owl-dots .owl-dot.active, .owl-theme .owl-dots.clickable .owl-dot:hover {
+	border: 3px solid @primary-color!important;
+	background-color: @primary-color!important;
+	outline: none;
+}
