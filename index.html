@@ -3,14 +3,15 @@
 <html class="ie ie9" lang="en-US">
 <![endif]-->
 <html lang="en-US">
-<head>
-    <meta charset="UTF-8">
-    <meta name="description" content="">
-    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
-    <meta name="author" content="Car Dealer Template">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Welcome to Good Enterprises</title>
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="">
+	<meta name="keywords" content="HTML,CSS,XML,JavaScript">
+	<meta name="author" content="Car Dealer Template">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Welcome to Good Enterprises</title>
 
 	<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,500,700' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="assets/css/bootstrap.css">
@@ -25,81 +26,130 @@
 	<!-- Animated Css -->
 	<link rel="stylesheet" href="assets/css/animated.css">
 	<style>
-		#container { margin: 0%; }
+		#container {
+			margin: 0%;
+		}
 
-#circle { position: relative; width: 100%; padding-bottom: 100%; overflow: hidden;}
+		#circle {
+			position: relative;
+			width: 100%;
+			padding-bottom: 100%;
+			overflow: hidden;
+		}
 
-#circle text { font-family: 'Helvetica Neue', Arial; font-size: 20px; font-weight: bold; color : Red}
+		#circle text {
+			font-family: 'Helvetica Neue', Arial;
+			font-size: 20px;
+			font-weight: bold;
+			color: Red
+		}
 
-#circle svg { position: absolute; color : Red; left: 0; top: 0; width: 100%; height: 540px;
+		#circle svg {
+			position: absolute;
+			color: Red;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 540px;
 
-  -webkit-animation-name: rotate;
-     -moz-animation-name: rotate;
-      -ms-animation-name: rotate;
-       -o-animation-name: rotate;
-          animation-name: rotate;
-  -webkit-animation-duration: 3s;
-     -moz-animation-duration: 3s;
-      -ms-animation-duration: 3s;
-       -o-animation-duration: 3s;
-          animation-duration: 3s;
-  -webkit-animation-iteration-count: infinite;
-     -moz-animation-iteration-count: infinite;
-      -ms-animation-iteration-count: infinite;
-       -o-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear;
-     -moz-animation-timing-function: linear;
-      -ms-animation-timing-function: linear;
-       -o-animation-timing-function: linear;
-          animation-timing-function: linear;
-}
+			-webkit-animation-name: rotate;
+			-moz-animation-name: rotate;
+			-ms-animation-name: rotate;
+			-o-animation-name: rotate;
+			animation-name: rotate;
+			-webkit-animation-duration: 3s;
+			-moz-animation-duration: 3s;
+			-ms-animation-duration: 3s;
+			-o-animation-duration: 3s;
+			animation-duration: 3s;
+			-webkit-animation-iteration-count: infinite;
+			-moz-animation-iteration-count: infinite;
+			-ms-animation-iteration-count: infinite;
+			-o-animation-iteration-count: infinite;
+			animation-iteration-count: infinite;
+			-webkit-animation-timing-function: linear;
+			-moz-animation-timing-function: linear;
+			-ms-animation-timing-function: linear;
+			-o-animation-timing-function: linear;
+			animation-timing-function: linear;
+		}
 
-@-webkit-keyframes rotate {
-    from { -webkit-transform: rotate(360deg); }
-    to { -webkit-transform: rotate(0); }
-}
-@-moz-keyframes rotate {
-    from { -moz-transform: rotate(360deg); }
-    to { -moz-transform: rotate(0); }
-}
-@-ms-keyframes rotate {
-    from { -ms-transform: rotate(360deg); }
-    to { -ms-transform: rotate(0); }
-}
-@-o-keyframes rotate {
-    from { -o-transform: rotate(360deg); }
-    to { -o-transform: rotate(0); }
-}
-@keyframes rotate {
-    from { transform: rotate(360deg); }
-    to { transform: rotate(0); }
-}
+		@-webkit-keyframes rotate {
+			from {
+				-webkit-transform: rotate(360deg);
+			}
 
+			to {
+				-webkit-transform: rotate(0);
+			}
+		}
 
+		@-moz-keyframes rotate {
+			from {
+				-moz-transform: rotate(360deg);
+			}
+
+			to {
+				-moz-transform: rotate(0);
+			}
+		}
+
+		@-ms-keyframes rotate {
+			from {
+				-ms-transform: rotate(360deg);
+			}
+
+			to {
+				-ms-transform: rotate(0);
+			}
+		}
+
+		@-o-keyframes rotate {
+			from {
+				-o-transform: rotate(360deg);
+			}
+
+			to {
+				-o-transform: rotate(0);
+			}
+		}
+
+		@keyframes rotate {
+			from {
+				transform: rotate(360deg);
+			}
+
+			to {
+				transform: rotate(0);
+			}
+		}
 	</style>
 </head>
+
 <body>
 
 	<div class="preloader">
 		<div id="container">
 			<div id="circle">
-				<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="300px" height="300px" viewBox="0 0 300 300" enable-background="new 0 0 300 300" xml:space="preserve">
+				<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+					y="0px" width="300px" height="300px" viewBox="0 0 300 300" enable-background="new 0 0 300 300"
+					xml:space="preserve">
 					<defs>
-						<path id="circlePath" d=" M 150, 150 m -60, 0 a 60,60 0 0,1 120,0 a 60,60 0 0,1 -120,0 "/>
+						<path id="circlePath" d=" M 150, 150 m -60, 0 a 60,60 0 0,1 120,0 a 60,60 0 0,1 -120,0 " />
 					</defs>
-					<circle cx="150" cy="100" r="75" fill="none"/>
+					<circle cx="150" cy="100" r="75" fill="none" />
 					<g>
-						<use xlink:href="#circlePath" fill="none"/>
+						<use xlink:href="#circlePath" fill="none" />
 						<text fill="#000">
-							<textPath xlink:href="#circlePath" style="color : Red">Welcome to Good Enterprises Private Limited</textPath>
+							<textPath xlink:href="#circlePath" style="color : Red">Welcome to Good Enterprises Private
+								Limited</textPath>
 						</text>
 					</g>
 				</svg>
 			</div>
 		</div>
 	</div>
-	
+
 	<!-- Header Menu Begin -->
 	<header class="site-header">
 		<div id="main-header" class="main-header">
@@ -121,54 +171,54 @@
 	<!-- Header Menu End -->
 
 	<div class="Modern-Slider">
-	  <!-- Slide 1 -->
-	  <div class="item">
-	    <div class="img-fill">
-	      <img src="./assets/images/slider1.jpg" alt="">
-	      <div class="info">
-	        <div >
-	        	<h5 style="color:yellow">We Produce Immersive Quality</h5>
-	          	<h3 style="color: yellow;">Importers of High Quality Vehicles from <em>Japan</em></h3>
-          		<h6 class="secondary-button">
-	          		<a href="#">Let us improve your driving experience<i class="fa fa-car"></i></a>
-	          	</h6>
-	        </div>
-	      </div>
-	    </div>
-	  </div>
-	  <!-- // Slide 1 -->
-	  <!-- Slide 2 -->
-	  <div class="item">
-	    <div class="img-fill">
-	      <img src="./assets/images/slider2.jpg" alt="">
-	      <div class="info">
-	        <div>
-	        	<h5>We Produce Immersive Quality</h5>
-	          	<h3>Looking For Perfect <em>Car</em>?</h3>
-	          	<h6 class="secondary-button">
-	          		<a href="#">Let us improve your driving experience<i class="fa fa-car"></i></a>
-	          	</h6>
-	        </div>
-	      </div>
-	    </div>
-	  </div>
-	  <!-- // Slide 2 -->
-	  <!-- Slide 3 -->
-	  <div class="item">
-	    <div class="img-fill">
-	      <img src="./assets/images/slider3.jpg" alt="">
-	      <div class="info">
-	        <div>
-	        	<h5>We Produce Immersive Quality</h5>
-	          	<h3>Looking For Perfect <em>Car</em>?</h3>
-	          	<h6 class="secondary-button">
-	          		<a href="#">Let us improve your driving experience<i class="fa fa-car"></i></a>
-	          	</h6>
-	        </div>
-	      </div>
-	    </div>
-	  </div>
-	  <!-- // Slide 3 -->
+		<!-- Slide 1 -->
+		<div class="item">
+			<div class="img-fill">
+				<img src="./assets/images/slider1.jpg" alt="">
+				<div class="info">
+					<div>
+						<h5 style="color:yellow">We Produce Immersive Quality</h5>
+						<h3 style="color: yellow;">Importers of High Quality Vehicles from <em>Japan</em></h3>
+						<h6 class="secondary-button">
+							<a href="#">Let us improve your driving experience<i class="fa fa-car"></i></a>
+						</h6>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- // Slide 1 -->
+		<!-- Slide 2 -->
+		<div class="item">
+			<div class="img-fill">
+				<img src="./assets/images/slider2.jpg" alt="">
+				<div class="info">
+					<div>
+						<h5>We Produce Immersive Quality</h5>
+						<h3>Looking For Perfect <em>Car</em>?</h3>
+						<h6 class="secondary-button">
+							<a href="#">Let us improve your driving experience<i class="fa fa-car"></i></a>
+						</h6>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- // Slide 2 -->
+		<!-- Slide 3 -->
+		<div class="item">
+			<div class="img-fill">
+				<img src="./assets/images/slider3.jpg" alt="">
+				<div class="info">
+					<div>
+						<h5>We Produce Immersive Quality</h5>
+						<h3>Looking For Perfect <em>Car</em>?</h3>
+						<h6 class="secondary-button">
+							<a href="#">Let us improve your driving experience<i class="fa fa-car"></i></a>
+						</h6>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- // Slide 3 -->
 	</div>
 
 
@@ -180,19 +230,25 @@
 						<div id="owl-top-features" class="owl-carousel owl-theme">
 							<div class="item car-item">
 								<div class="thumb-content">
-									<a href="#"><img src="./assets/images/cars/TOYOTA RAIZE 1.0 TURBO G” 2020 RED.jpg" alt=""></a>
+									<a href="#"><img src="./assets/images/cars/TOYOTA RAIZE 1.0 TURBO G” 2020 RED.jpg"
+											alt=""></a>
 								</div>
 								<div class="down-content">
-									<a href="#"><h4>TOYOTA RAIZE 1.0 TURBO G” 2020</h4></a>
+									<a href="#">
+										<h4>TOYOTA RAIZE 1.0 TURBO G” 2020</h4>
+									</a>
 									<span>7.5 Million Rs.</span>
 								</div>
 							</div>
 							<div class="item car-item">
 								<div class="thumb-content">
-									<a href="#"><img src="./assets/images/cars/SUZUKI WAGON – R – HYBRID FX” 2018.jpg" alt=""></a>
+									<a href="#"><img src="./assets/images/cars/SUZUKI WAGON – R – HYBRID FX” 2018.jpg"
+											alt=""></a>
 								</div>
 								<div class="down-content">
-									<a href="#"><h4>SUZUKI WAGON – R – HYBRID FX” 2018</h4></a>
+									<a href="#">
+										<h4>SUZUKI WAGON – R – HYBRID FX” 2018</h4>
+									</a>
 									<span>5 Million Rs.</span>
 								</div>
 							</div>
@@ -201,25 +257,33 @@
 									<a href="#"><img src="./assets/images/cars/SUZUKI ALTO L RBS”2017.jpg" alt=""></a>
 								</div>
 								<div class="down-content">
-									<a href="#"><h4>SUZUKI ALTO L RBS”2017</h4></a>
+									<a href="#">
+										<h4>SUZUKI ALTO L RBS”2017</h4>
+									</a>
 									<span>3 Million Rs.</span>
 								</div>
 							</div>
 							<div class="item car-item">
 								<div class="thumb-content">
-									<a href="#"><img src="./assets/images/cars/TOYOTA RAIZE 1.0 TURBO G” 2020.jpg" alt=""></a>
+									<a href="#"><img src="./assets/images/cars/TOYOTA RAIZE 1.0 TURBO G” 2020.jpg"
+											alt=""></a>
 								</div>
 								<div class="down-content">
-									<a href="#"><h4>TOYOTA RAIZE 1.0 TURBO G” 2020</h4></a>
+									<a href="#">
+										<h4>TOYOTA RAIZE 1.0 TURBO G” 2020</h4>
+									</a>
 									<span>7.5 Million Rs.</span>
 								</div>
 							</div>
 							<div class="item car-item">
 								<div class="thumb-content">
-									<a href="#"><img src="./assets/images/cars/TOYOTA ROOMY CUSTOM GS” 2017.jpg" alt=""></a>
+									<a href="#"><img src="./assets/images/cars/TOYOTA ROOMY CUSTOM GS” 2017.jpg"
+											alt=""></a>
 								</div>
 								<div class="down-content">
-									<a href="#"><h4>TOYOTA ROOMY CUSTOM GS” 2017</h4></a>
+									<a href="#">
+										<h4>TOYOTA ROOMY CUSTOM GS” 2017</h4>
+									</a>
 									<span>5 Million Rs.</span>
 								</div>
 							</div>
@@ -228,7 +292,9 @@
 									<a href="#"><img src="./assets/images/cars/SUZUKI SWIFT RST 2017.jpg" alt=""></a>
 								</div>
 								<div class="down-content">
-									<a href="#"><h4>SUZUKI SWIFT RST 2017</h4></a>
+									<a href="#">
+										<h4>SUZUKI SWIFT RST 2017</h4>
+									</a>
 									<span>8 Million Rs.</span>
 								</div>
 							</div>
@@ -237,7 +303,9 @@
 									<a href="#"><img src="./assets/images/cars/TOYOTA AXIO 2017.png" alt=""></a>
 								</div>
 								<div class="down-content">
-									<a href="#"><h4>TOYOTA AXIO 2017</h4></a>
+									<a href="#">
+										<h4>TOYOTA AXIO 2017</h4>
+									</a>
 									<span>4.5 Million Rs.</span>
 								</div>
 							</div>
@@ -246,7 +314,9 @@
 									<a href="#"><img src="./assets/images/cars/SUZUKI ALTO 2017.png" alt=""></a>
 								</div>
 								<div class="down-content">
-									<a href="#"><h4>SUZUKI ALTO 2017</h4></a>
+									<a href="#">
+										<h4>SUZUKI ALTO 2017</h4>
+									</a>
 									<span>3 Million Rs.</span>
 								</div>
 							</div>
@@ -257,8 +327,8 @@
 		</div>
 	</section>
 
-    <section>
-    	<div class="features-search-section">
+	<section>
+		<div class="features-search-section">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12">
@@ -266,45 +336,64 @@
 							<div class="col-md-6">
 								<div class="service-item wow fadeIn" data-wow-duration="0.75s">
 									<i class="fa fa-car"></i>
-										<div class="text-content">
+									<div class="text-content">
 										<h6>SPARE PARTS SALES</h6>
-										<p>As an extra compliment to vehicle trading, we bring down genuine spare parts for a range of vehicle brands and models to Sri Lanka. We take pride in the fact that we are able to provide with a company warranty as extra to the manufacturing warranty to all the spare parts. We ensure the genuineness of every part we sell and assure the best prices in the market for them as well.</p>
+										<p>As an extra compliment to vehicle trading, we bring down genuine spare parts
+											for a range of vehicle brands and models to Sri Lanka. We take pride in the
+											fact that we are able to provide with a company warranty as extra to the
+											manufacturing warranty to all the spare parts. We ensure the genuineness of
+											every part we sell and assure the best prices in the market for them as
+											well.</p>
 									</div>
 								</div>
 							</div>
 							<div class="col-md-6">
 								<div class="service-item wow fadeIn" data-wow-duration="0.75s">
 									<i class="fa fa-search"></i>
-										<div class="text-content">
+									<div class="text-content">
 										<h6>SERVICE CENTERS</h6>
-										<p>There are Several Service Centers island-wide to provide our clients with full service packages for their vehicles. All these centers are staffed with experienced professionals for regular vehicle maintenance, servicing, general repairs and accident repairs. We assure 100% quality in our services and make sure all your vehicle needs are met satisfactorily.</p>
+										<p>There are Several Service Centers island-wide to provide our clients with
+											full service packages for their vehicles. All these centers are staffed with
+											experienced professionals for regular vehicle maintenance, servicing,
+											general repairs and accident repairs. We assure 100% quality in our services
+											and make sure all your vehicle needs are met satisfactorily.</p>
 									</div>
 								</div>
 							</div>
 							<div class="col-md-6">
 								<div class="service-item wow fadeIn" data-wow-duration="0.75s">
 									<i class="fa fa-users"></i>
-										<div class="text-content">
+									<div class="text-content">
 										<h6>FINANCIAL SERVICES</h6>
-										<p>We have partnered up with many reputed financial institutes in Sri Lanka to provide you with the best financial solutions for you to buy your dream vehicle. These solutions includes better interest rates for finance leasing, easy installment plans and even the vehicle exchanging facilities for a better customer service and for the best vehicle trading services in Sri Lanka.</p>
+										<p>We have partnered up with many reputed financial institutes in Sri Lanka to
+											provide you with the best financial solutions for you to buy your dream
+											vehicle. These solutions includes better interest rates for finance leasing,
+											easy installment plans and even the vehicle exchanging facilities for a
+											better customer service and for the best vehicle trading services in Sri
+											Lanka.</p>
 									</div>
 								</div>
 							</div>
 							<div class="col-md-6">
 								<div class="service-item wow fadeIn" data-wow-duration="0.75s">
 									<i class="fa fa-globe"></i>
-										<div class="text-content">
+									<div class="text-content">
 										<h6>EXCHANGING FACILITIES</h6>
-										<p>If you are dreaming of buying a new car, but have to wait until your existing car is sold, then Good Enterprises is the ideal place for you. Our exchanging facilities suggest the best price for your current vehicle and let you pay the rest for the new vehicle. All the documentation and business process will be handled by our professionals to give you an easy yet reliable service.</p>
+										<p>If you are dreaming of buying a new car, but have to wait until your existing
+											car is sold, then Good Enterprises is the ideal place for you. Our
+											exchanging facilities suggest the best price for your current vehicle and
+											let you pay the rest for the new vehicle. All the documentation and business
+											process will be handled by our professionals to give you an easy yet
+											reliable service.</p>
 									</div>
 								</div>
-							</div>							
+							</div>
 						</div>
-					</div>					
+					</div>
 				</div>
 			</div>
 		</div>
-    </section>
+	</section>
 
 
 	<section>
@@ -332,18 +421,37 @@
 										<a href="#">For Sale</a>
 									</div>
 									<div class="thumb-inner">
-										<a href="#"><img src="./assets/images/cars/SUZUKI EVERY JOIN” 2016.jpg" alt=""></a>
+										<a href="#"><img src="./assets/images/cars/SUZUKI EVERY JOIN” 2016.jpg"
+												alt=""></a>
 									</div>
 								</div>
 								<div class="down-content">
-									<a href="#"><h4>SUZUKI EVERY JOIN” 2016</h4></a>
+									<a href="#">
+										<h4>SUZUKI EVERY JOIN” 2016</h4>
+									</a>
 									<span>4.5 Million Rs.</span>
 									<p>ABS-DUAL/A/BAG,AUTO TR MISSION,5 DOOR,REMOTE KEY,AC,PS,PW</p>
 									<ul class="car-info">
-										<li><div class="item"><i class="flaticon flaticon-calendar"></i><p>2016</p></div></li>
-										<li><div class="item"><i class="flaticon flaticon-speed"></i><p>160p/h</p></div></li>
-										<li><div class="item"><i class="flaticon flaticon-road"></i><p>26.00km</p></div></li>
-										<li><div class="item"><i class="flaticon flaticon-fuel"></i><p>Petrol</p></div></li>
+										<li>
+											<div class="item"><i class="flaticon flaticon-calendar"></i>
+												<p>2016</p>
+											</div>
+										</li>
+										<li>
+											<div class="item"><i class="flaticon flaticon-speed"></i>
+												<p>160p/h</p>
+											</div>
+										</li>
+										<li>
+											<div class="item"><i class="flaticon flaticon-road"></i>
+												<p>26.00km</p>
+											</div>
+										</li>
+										<li>
+											<div class="item"><i class="flaticon flaticon-fuel"></i>
+												<p>Petrol</p>
+											</div>
+										</li>
 									</ul>
 								</div>
 							</div>
@@ -355,18 +463,37 @@
 										<a href="#">For Sale</a>
 									</div>
 									<div class="thumb-inner">
-										<a href="#"><img src="./assets/images/cars/SUZUKI EVERY PA LTD” 2019.png" alt=""></a>
+										<a href="#"><img src="./assets/images/cars/SUZUKI EVERY PA LTD” 2019.png"
+												alt=""></a>
 									</div>
 								</div>
 								<div class="down-content">
-									<a href="#"><h4>SUZUKI EVERY PA LTD” 2019</h4></a>
+									<a href="#">
+										<h4>SUZUKI EVERY PA LTD” 2019</h4>
+									</a>
 									<span>5 Million Rs.</span>
 									<p>ABS-DUAL/A/BAG,AUTO TR MISSION,5 DOOR,AC-PS</p>
 									<ul class="car-info">
-										<li><div class="item"><i class="flaticon flaticon-calendar"></i><p>2019</p></div></li>
-										<li><div class="item"><i class="flaticon flaticon-speed"></i><p>180p/h</p></div></li>
-										<li><div class="item"><i class="flaticon flaticon-road"></i><p>20.00km</p></div></li>
-										<li><div class="item"><i class="flaticon flaticon-fuel"></i><p>Petrol</p></div></li>
+										<li>
+											<div class="item"><i class="flaticon flaticon-calendar"></i>
+												<p>2019</p>
+											</div>
+										</li>
+										<li>
+											<div class="item"><i class="flaticon flaticon-speed"></i>
+												<p>180p/h</p>
+											</div>
+										</li>
+										<li>
+											<div class="item"><i class="flaticon flaticon-road"></i>
+												<p>20.00km</p>
+											</div>
+										</li>
+										<li>
+											<div class="item"><i class="flaticon flaticon-fuel"></i>
+												<p>Petrol</p>
+											</div>
+										</li>
 									</ul>
 								</div>
 							</div>
@@ -378,18 +505,37 @@
 										<a href="#">For Sale</a>
 									</div>
 									<div class="thumb-inner">
-										<a href="#"><img src="./assets/images/cars/SUZUKI EVERY PA LTD” 2018.jpg" alt=""></a>
+										<a href="#"><img src="./assets/images/cars/SUZUKI EVERY PA LTD” 2018.jpg"
+												alt=""></a>
 									</div>
 								</div>
 								<div class="down-content">
-									<a href="#"><h4>SUZUKI EVERY PA LTD” 2018</h4></a>
+									<a href="#">
+										<h4>SUZUKI EVERY PA LTD” 2018</h4>
+									</a>
 									<span>4.5 Million Rs.</span>
 									<p>ABS-DUAL/A/BAG,AUTO TR MISSION,5 DOOR,AC-PS</p>
 									<ul class="car-info">
-										<li><div class="item"><i class="flaticon flaticon-calendar"></i><p>2018</p></div></li>
-										<li><div class="item"><i class="flaticon flaticon-speed"></i><p>200p/h</p></div></li>
-										<li><div class="item"><i class="flaticon flaticon-road"></i><p>23.00km</p></div></li>
-										<li><div class="item"><i class="flaticon flaticon-fuel"></i><p>Petrol</p></div></li>
+										<li>
+											<div class="item"><i class="flaticon flaticon-calendar"></i>
+												<p>2018</p>
+											</div>
+										</li>
+										<li>
+											<div class="item"><i class="flaticon flaticon-speed"></i>
+												<p>200p/h</p>
+											</div>
+										</li>
+										<li>
+											<div class="item"><i class="flaticon flaticon-road"></i>
+												<p>23.00km</p>
+											</div>
+										</li>
+										<li>
+											<div class="item"><i class="flaticon flaticon-fuel"></i>
+												<p>Petrol</p>
+											</div>
+										</li>
 									</ul>
 								</div>
 							</div>
@@ -401,18 +547,38 @@
 										<a href="#">For Sale</a>
 									</div>
 									<div class="thumb-inner">
-										<a href="#"><img src="./assets/images/cars/TOYOTA RAIZE 1.0 TURBO Z” 2020.jpg" alt=""></a>
+										<a href="#"><img src="./assets/images/cars/TOYOTA RAIZE 1.0 TURBO Z” 2020.jpg"
+												alt=""></a>
 									</div>
 								</div>
 								<div class="down-content">
-									<a href="#"><h4>TOYOTA RAIZE 1.0 TURBO Z” 2020</h4></a>
+									<a href="#">
+										<h4>TOYOTA RAIZE 1.0 TURBO Z” 2020</h4>
+									</a>
 									<span>4.2 Million Rs.</span>
-									<p>PANORAMIC VIEW NAVI READY" SPARE TYRE,ABS-DUAL/A/BAG,AUTO TR MISSION,5 DOOR,M/FUNC.STEERING,CENTER LOCKING</p>
+									<p>PANORAMIC VIEW NAVI READY" SPARE TYRE,ABS-DUAL/A/BAG,AUTO TR MISSION,5
+										DOOR,M/FUNC.STEERING,CENTER LOCKING</p>
 									<ul class="car-info">
-										<li><div class="item"><i class="flaticon flaticon-calendar"></i><p>2020</p></div></li>
-										<li><div class="item"><i class="flaticon flaticon-speed"></i><p>175p/h</p></div></li>
-										<li><div class="item"><i class="flaticon flaticon-road"></i><p>30.00km</p></div></li>
-										<li><div class="item"><i class="flaticon flaticon-fuel"></i><p>Petrol</p></div></li>
+										<li>
+											<div class="item"><i class="flaticon flaticon-calendar"></i>
+												<p>2020</p>
+											</div>
+										</li>
+										<li>
+											<div class="item"><i class="flaticon flaticon-speed"></i>
+												<p>175p/h</p>
+											</div>
+										</li>
+										<li>
+											<div class="item"><i class="flaticon flaticon-road"></i>
+												<p>30.00km</p>
+											</div>
+										</li>
+										<li>
+											<div class="item"><i class="flaticon flaticon-fuel"></i>
+												<p>Petrol</p>
+											</div>
+										</li>
 									</ul>
 								</div>
 							</div>
@@ -424,18 +590,39 @@
 										<a href="#">For Sale</a>
 									</div>
 									<div class="thumb-inner">
-										<a href="#"><img src="./assets/images/cars/SUZUKI WAGON – R – HYBRID FX SAFETY PKG” 2017.jpg" alt=""></a>
+										<a href="#"><img
+												src="./assets/images/cars/SUZUKI WAGON – R – HYBRID FX SAFETY PKG” 2017.jpg"
+												alt=""></a>
 									</div>
 								</div>
 								<div class="down-content">
-									<a href="#"><h4>SUZUKI WAGON – R – HYBRID FX SAFETY PKG” 2017</h4></a>
+									<a href="#">
+										<h4>SUZUKI WAGON – R – HYBRID FX SAFETY PKG” 2017</h4>
+									</a>
 									<span>4.8 Million Rs.</span>
-									<p>ABS-DUAL/A/BAG,AUTO TR MISSION,5 DOOR,CENTER LOCKING,POWER MIRRORS,AUTO BRAKE,AC,PS,PW,RETRACT PM</p>
+									<p>ABS-DUAL/A/BAG,AUTO TR MISSION,5 DOOR,CENTER LOCKING,POWER MIRRORS,AUTO
+										BRAKE,AC,PS,PW,RETRACT PM</p>
 									<ul class="car-info">
-										<li><div class="item"><i class="flaticon flaticon-calendar"></i><p>2017</p></div></li>
-										<li><div class="item"><i class="flaticon flaticon-speed"></i><p>170p/h</p></div></li>
-										<li><div class="item"><i class="flaticon flaticon-road"></i><p>24.00km</p></div></li>
-										<li><div class="item"><i class="flaticon flaticon-fuel"></i><p>Petrol</p></div></li>
+										<li>
+											<div class="item"><i class="flaticon flaticon-calendar"></i>
+												<p>2017</p>
+											</div>
+										</li>
+										<li>
+											<div class="item"><i class="flaticon flaticon-speed"></i>
+												<p>170p/h</p>
+											</div>
+										</li>
+										<li>
+											<div class="item"><i class="flaticon flaticon-road"></i>
+												<p>24.00km</p>
+											</div>
+										</li>
+										<li>
+											<div class="item"><i class="flaticon flaticon-fuel"></i>
+												<p>Petrol</p>
+											</div>
+										</li>
 									</ul>
 								</div>
 							</div>
@@ -451,18 +638,296 @@
 									</div>
 								</div>
 								<div class="down-content">
-									<a href="#"><h4>TOYOTA PASSO 2017</h4></a>
+									<a href="#">
+										<h4>TOYOTA PASSO 2017</h4>
+									</a>
 									<span>3.7 Million Rs.</span>
 									<p>PANORAMIC VIEW NAVI READY" SPARE TYRE,ABS-DUAL/A/BAG,AUTO TR MISSION</p>
 									<ul class="car-info">
-										<li><div class="item"><i class="flaticon flaticon-calendar"></i><p>2017</p></div></li>
-										<li><div class="item"><i class="flaticon flaticon-speed"></i><p>180p/h</p></div></li>
-										<li><div class="item"><i class="flaticon flaticon-road"></i><p>28.00km</p></div></li>
-										<li><div class="item"><i class="flaticon flaticon-fuel"></i><p>Petrol</p></div></li>
+										<li>
+											<div class="item"><i class="flaticon flaticon-calendar"></i>
+												<p>2017</p>
+											</div>
+										</li>
+										<li>
+											<div class="item"><i class="flaticon flaticon-speed"></i>
+												<p>180p/h</p>
+											</div>
+										</li>
+										<li>
+											<div class="item"><i class="flaticon flaticon-road"></i>
+												<p>28.00km</p>
+											</div>
+										</li>
+										<li>
+											<div class="item"><i class="flaticon flaticon-fuel"></i>
+												<p>Petrol</p>
+											</div>
+										</li>
 									</ul>
 								</div>
 							</div>
 						</div>
+
+						<!--index page Car List begin-->
+						<div class="col-md-4 col-sm-6">
+							<div class="car-item wow fadeIn" data-wow-duration="0.75s">
+								<div class="thumb-content">
+									<div class="car-banner">
+										<a href="#">For Sale</a>
+									</div>
+									<div class="thumb-inner">
+										<a href="#"><img src="./assets/images/cars/TOYOTA PASSO 2017.jpg" alt=""></a>
+									</div>
+								</div>
+								<div class="down-content">
+									<a href="#">
+										<h4>TOYOTA PASSO 2017</h4>
+									</a>
+									<span>3.7 Million Rs.</span>
+									<p>PANORAMIC VIEW NAVI READY" SPARE TYRE,ABS-DUAL/A/BAG,AUTO TR MISSION</p>
+									<ul class="car-info">
+										<li>
+											<div class="item"><i class="flaticon flaticon-calendar"></i>
+												<p>2017</p>
+											</div>
+										</li>
+										<li>
+											<div class="item"><i class="flaticon flaticon-speed"></i>
+												<p>180p/h</p>
+											</div>
+										</li>
+										<li>
+											<div class="item"><i class="flaticon flaticon-road"></i>
+												<p>28.00km</p>
+											</div>
+										</li>
+										<li>
+											<div class="item"><i class="flaticon flaticon-fuel"></i>
+												<p>Petrol</p>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<!--index page Car List end-->
+						<!--index page Car List begin-->
+						<div class="col-md-4 col-sm-6">
+							<div class="car-item wow fadeIn" data-wow-duration="0.75s">
+								<div class="thumb-content">
+									<div class="car-banner">
+										<a href="#">For Sale</a>
+									</div>
+									<div class="thumb-inner">
+										<a href="#"><img src="./assets/images/cars/TOYOTA PASSO 2017.jpg" alt=""></a>
+									</div>
+								</div>
+								<div class="down-content">
+									<a href="#">
+										<h4>TOYOTA PASSO 2017</h4>
+									</a>
+									<span>3.7 Million Rs.</span>
+									<p>PANORAMIC VIEW NAVI READY" SPARE TYRE,ABS-DUAL/A/BAG,AUTO TR MISSION</p>
+									<ul class="car-info">
+										<li>
+											<div class="item"><i class="flaticon flaticon-calendar"></i>
+												<p>2017</p>
+											</div>
+										</li>
+										<li>
+											<div class="item"><i class="flaticon flaticon-speed"></i>
+												<p>180p/h</p>
+											</div>
+										</li>
+										<li>
+											<div class="item"><i class="flaticon flaticon-road"></i>
+												<p>28.00km</p>
+											</div>
+										</li>
+										<li>
+											<div class="item"><i class="flaticon flaticon-fuel"></i>
+												<p>Petrol</p>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<!--index page Car List end-->
+						<!--index page Car List begin-->
+						<div class="col-md-4 col-sm-6">
+							<div class="car-item wow fadeIn" data-wow-duration="0.75s">
+								<div class="thumb-content">
+									<div class="car-banner">
+										<a href="#">For Sale</a>
+									</div>
+									<div class="thumb-inner">
+										<a href="#"><img src="./assets/images/cars/TOYOTA PASSO 2017.jpg" alt=""></a>
+									</div>
+								</div>
+								<div class="down-content">
+									<a href="#">
+										<h4>TOYOTA PASSO 2017</h4>
+									</a>
+									<span>3.7 Million Rs.</span>
+									<p>PANORAMIC VIEW NAVI READY" SPARE TYRE,ABS-DUAL/A/BAG,AUTO TR MISSION</p>
+									<ul class="car-info">
+										<li>
+											<div class="item"><i class="flaticon flaticon-calendar"></i>
+												<p>2017</p>
+											</div>
+										</li>
+										<li>
+											<div class="item"><i class="flaticon flaticon-speed"></i>
+												<p>180p/h</p>
+											</div>
+										</li>
+										<li>
+											<div class="item"><i class="flaticon flaticon-road"></i>
+												<p>28.00km</p>
+											</div>
+										</li>
+										<li>
+											<div class="item"><i class="flaticon flaticon-fuel"></i>
+												<p>Petrol</p>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<!--index page Car List end-->
+						<!--index page Car List begin-->
+						<div class="col-md-4 col-sm-6">
+							<div class="car-item wow fadeIn" data-wow-duration="0.75s">
+								<div class="thumb-content">
+									<div class="car-banner">
+										<a href="#">For Sale</a>
+									</div>
+									<div class="thumb-inner">
+										<a href="#"><img src="./assets/images/cars/TOYOTA PASSO 2017.jpg" alt=""></a>
+									</div>
+								</div>
+								<div class="down-content">
+									<a href="#">
+										<h4>TOYOTA PASSO 2017</h4>
+									</a>
+									<span>3.7 Million Rs.</span>
+									<p>PANORAMIC VIEW NAVI READY" SPARE TYRE,ABS-DUAL/A/BAG,AUTO TR MISSION</p>
+									<ul class="car-info">
+										<li>
+											<div class="item"><i class="flaticon flaticon-calendar"></i>
+												<p>2017</p>
+											</div>
+										</li>
+										<li>
+											<div class="item"><i class="flaticon flaticon-speed"></i>
+												<p>180p/h</p>
+											</div>
+										</li>
+										<li>
+											<div class="item"><i class="flaticon flaticon-road"></i>
+												<p>28.00km</p>
+											</div>
+										</li>
+										<li>
+											<div class="item"><i class="flaticon flaticon-fuel"></i>
+												<p>Petrol</p>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<!--index page Car List end-->
+						<!--index page Car List begin-->
+						<div class="col-md-4 col-sm-6">
+							<div class="car-item wow fadeIn" data-wow-duration="0.75s">
+								<div class="thumb-content">
+									<div class="car-banner">
+										<a href="#">For Sale</a>
+									</div>
+									<div class="thumb-inner">
+										<a href="#"><img src="./assets/images/cars/TOYOTA PASSO 2017.jpg" alt=""></a>
+									</div>
+								</div>
+								<div class="down-content">
+									<a href="#">
+										<h4>TOYOTA PASSO 2017</h4>
+									</a>
+									<span>3.7 Million Rs.</span>
+									<p>PANORAMIC VIEW NAVI READY" SPARE TYRE,ABS-DUAL/A/BAG,AUTO TR MISSION</p>
+									<ul class="car-info">
+										<li>
+											<div class="item"><i class="flaticon flaticon-calendar"></i>
+												<p>2017</p>
+											</div>
+										</li>
+										<li>
+											<div class="item"><i class="flaticon flaticon-speed"></i>
+												<p>180p/h</p>
+											</div>
+										</li>
+										<li>
+											<div class="item"><i class="flaticon flaticon-road"></i>
+												<p>28.00km</p>
+											</div>
+										</li>
+										<li>
+											<div class="item"><i class="flaticon flaticon-fuel"></i>
+												<p>Petrol</p>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<!--index page Car List end-->
+						<!--index page Car List begin-->
+						<div class="col-md-4 col-sm-6">
+							<div class="car-item wow fadeIn" data-wow-duration="0.75s">
+								<div class="thumb-content">
+									<div class="car-banner">
+										<a href="#">For Sale</a>
+									</div>
+									<div class="thumb-inner">
+										<a href="#"><img src="./assets/images/cars/TOYOTA PASSO 2017.jpg" alt=""></a>
+									</div>
+								</div>
+								<div class="down-content">
+									<a href="#">
+										<h4>TOYOTA PASSO 2017</h4>
+									</a>
+									<span>3.7 Million Rs.</span>
+									<p>PANORAMIC VIEW NAVI READY" SPARE TYRE,ABS-DUAL/A/BAG,AUTO TR MISSION</p>
+									<ul class="car-info">
+										<li>
+											<div class="item"><i class="flaticon flaticon-calendar"></i>
+												<p>2017</p>
+											</div>
+										</li>
+										<li>
+											<div class="item"><i class="flaticon flaticon-speed"></i>
+												<p>180p/h</p>
+											</div>
+										</li>
+										<li>
+											<div class="item"><i class="flaticon flaticon-road"></i>
+												<p>28.00km</p>
+											</div>
+										</li>
+										<li>
+											<div class="item"><i class="flaticon flaticon-fuel"></i>
+												<p>Petrol</p>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<!--index page Car List end-->
+
 					</div>
 				</div>
 			</div>
@@ -472,33 +937,39 @@
 
 	<section>
 		<div class="testimonials">
-			<div class="container">						 
+			<div class="container">
 				<div id="owl-testimonials" class="owl-carousel owl-theme">
-				 	<div class="item wow fadeIn" data-wow-duration="0.75s">
-				 		<div class="line-dec"></div>
-				  		<p><strong>OUR VISION</strong> <br> To be the Number One Preferred Supplier for High Quality Motor Vehicles and related services with Profitable Growth through Superior Customer Service, Innovation, Quality and Commitment</p>
-				  		<div class="author-rate">
-				  		</div>
-				  	</div>
-					  <div class="item wow fadeIn" data-wow-duration="0.75s">
+					<div class="item wow fadeIn" data-wow-duration="0.75s">
 						<div class="line-dec"></div>
-						 <p><strong>OUR MISSION</strong> <br> To Provide our Customers Great Quality Vehicles at Best Possible Prices with Exceptional Service to Achieve Maximum Customer Satisfaction throughout the Business Eco System</p>
-						 <div class="author-rate">
-						 </div>
-					 </div>
-					 <div class="item wow fadeIn" data-wow-duration="0.75s">
+						<p><strong>OUR VISION</strong> <br> To be the Number One Preferred Supplier for High Quality
+							Motor Vehicles and related services with Profitable Growth through Superior Customer
+							Service, Innovation, Quality and Commitment</p>
+						<div class="author-rate">
+						</div>
+					</div>
+					<div class="item wow fadeIn" data-wow-duration="0.75s">
 						<div class="line-dec"></div>
-						 <p><strong>ABOUT US</strong> <br> We Have Been in The Journey to Keep the Long-Lasting Goodwill and Trust of Our Customers as a Supplier of High-Quality Vehicles and a Transport Solutions Provider and Make Their Vehicle Dream Come True</p>
-						 <div class="author-rate">
-						 </div>
-					 </div>
+						<p><strong>OUR MISSION</strong> <br> To Provide our Customers Great Quality Vehicles at Best
+							Possible Prices with Exceptional Service to Achieve Maximum Customer Satisfaction throughout
+							the Business Eco System</p>
+						<div class="author-rate">
+						</div>
+					</div>
+					<div class="item wow fadeIn" data-wow-duration="0.75s">
+						<div class="line-dec"></div>
+						<p><strong>ABOUT US</strong> <br> We Have Been in The Journey to Keep the Long-Lasting Goodwill
+							and Trust of Our Customers as a Supplier of High-Quality Vehicles and a Transport Solutions
+							Provider and Make Their Vehicle Dream Come True</p>
+						<div class="author-rate">
+						</div>
+					</div>
 
 				</div>
 			</div>
 		</div>
 	</section>
 
-<!--Footer Begin -->
+	<!--Footer Begin -->
 	<footer>
 		<div class="container">
 			<div class="row">
@@ -506,7 +977,11 @@
 					<div class="footer-item">
 						<div class="about-us">
 							<h2>About Us</h2>
-							<p style="text-align: justify;">Since its inauguration as Good Enterprises Pvt Ltd, we have been in the journey to keep the long-lasting goodwill and trust of our customers as a supplier of high-quality vehicles and a transport solutions provider. We are exclusively created to give a better service to our customers and make their vehicle dream come true</p>
+							<p style="text-align: justify;">Since its inauguration as Good Enterprises Pvt Ltd, we have
+								been in the journey to keep the long-lasting goodwill and trust of our customers as a
+								supplier of high-quality vehicles and a transport solutions provider. We are exclusively
+								created to give a better service to our customers and make their vehicle dream come true
+							</p>
 							<ul>
 								<li><a href="#"><i class="fa fa-facebook"></i></a></li>
 								<li><a href="#"><i class="fa fa-twitter"></i></a></li>
@@ -572,8 +1047,8 @@
 			</div>
 		</div>
 	</footer>
-	
-<!--Footer End -->
+
+	<!--Footer End -->
 
 	<script src="assets/js/jquery-1.11.0.min.js"></script>
 	<!-- Slider Pro Js -->
@@ -581,12 +1056,13 @@
 	<!-- Slick Slider Js -->
 	<script src="assets/js/slick.js"></script>
 	<!-- Owl Carousel Js -->
-    <script src="assets/js/owl.carousel.min.js"></script>
+	<script src="assets/js/owl.carousel.min.js"></script>
 	<!-- Boostrap Js -->
-    <script src="assets/js/bootstrap.min.js"></script>
-    <!-- Boostrap Js -->
-    <script src="assets/js/wow.animation.js"></script>
+	<script src="assets/js/bootstrap.min.js"></script>
+	<!-- Boostrap Js -->
+	<script src="assets/js/wow.animation.js"></script>
 	<!-- Custom Js -->
-    <script src="assets/js/custom.js"></script>
+	<script src="assets/js/custom.js"></script>
 </body>
+
 </html>
