@@ -1,0 +1,537 @@
+.recent-cars, .on-grids {
+	.car-item {
+		margin-bottom: 30px;
+		border-radius: 5px;
+		box-shadow: 0px 0px 20px rgba(0,0,0,0.15);
+		border-bottom: 3px solid transparent;
+		transition: all .3s;
+		&:hover {
+			border-bottom: 3px solid @primary-color;
+		}
+		.thumb-content {
+			position: relative;
+			.car-banner {
+				position: absolute;
+				margin-top: 0px;
+				left: 20px;
+				bottom: -18px;
+				margin-right: 26px;
+				a {
+					background-color: @secondary-color;
+					border-radius: 3px;
+					color: @heading;
+					font-size: 13px;
+					font-weight: 700;
+					text-transform: uppercase;
+					width: 85px;
+					height: 36px;
+					text-align: center;
+					line-height: 36px;
+					display: inline-block;
+				}
+			}
+			.thumb-inner {
+				img {
+					transition: all 0.5s;
+					position: center center;
+					border-top-right-radius: 5px;
+					border-top-left-radius: 5px;
+					width: 100%;
+					overflow: hidden;
+					background-size: cover;
+				}
+			}
+		}
+		.down-content {
+			padding: 20px;
+			text-align: left;
+			h4 {
+				margin-top: 15px;
+				font-size: 17px;
+				font-weight: 700;
+				color: @heading;
+			}
+			span {
+				font-size: 15px;
+				font-weight: 900;
+				color: @primary-color;
+				margin-bottom: 0px;
+			}
+			p {
+				margin: 10px 0px 20px 0px;
+			}
+			ul {
+				padding: 0;
+				margin: 0;
+				width: 100%;
+				overflow: hidden;
+				list-style: none;
+				li {
+					display: inline-block;
+					width: 23.5%;
+					text-align: center;
+					border-right: 3px solid @white;
+					@media (max-width: @screen-sm-max) {
+						width: 23%;
+					}
+					&:last-child {
+						border-right: none;
+					}
+					.item {
+						border-radius: 5px;
+						background-color: @bg-light;
+						padding: 10px 5px;
+						transition: all .3s;
+						&:hover {
+							background-color: @secondary-color;
+							i {
+								color: @heading;
+							}
+							p {
+								color: @heading;
+							}
+						}
+						i {
+							font-size: 11px;
+							text-transform: uppercase;
+							width: 100%;
+							padding-bottom: 5px;
+							float: left;
+						}
+						p {
+							margin-top: 0px;
+							margin-bottom: 3px;
+							font-size: 12px;
+							font-weight: 600;
+							color: @text-color;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+
+.on-listing {
+	.car-item {	
+		margin-bottom: 30px;
+		border-radius: 5px;
+		box-shadow: 0px 0px 20px rgba(0,0,0,0.15);
+		.thumb-content {
+			position: relative;
+			.car-banner {
+				position: absolute;
+				margin-top: 0px;
+				left: 20px;
+				top: 20px;
+				bottom: -18px;
+				margin-right: 26px;
+				a {
+					background-color: @secondary-color;
+					border-radius: 3px;
+					color: @heading;
+					font-size: 13px;
+					font-weight: 700;
+					text-transform: uppercase;
+					width: 85px;
+					height: 36px;
+					text-align: center;
+					line-height: 36px;
+					display: inline-block;
+				}
+			}
+			.thumb-inner {
+				img {
+					transition: all 0.5s;
+					position: center center;
+					border-top-left-radius: 5px;
+					border-bottom-left-radius: 5px;
+					width: 100%;
+					height: auto;
+					overflow: hidden;
+					background-size: cover;
+					@media (max-width: @screen-sm-max) {
+						border-top-left-radius: 5px;
+						border-top-right-radius: 5px;
+						border-bottom-left-radius: 0px;
+					}
+				}
+			}
+		}
+		.down-content {
+			text-align: left;
+			padding: 30px 30px 30px 0px;
+			@media (max-width: @screen-sm-max) {
+				padding: 30px;
+			}
+			h4 {
+				margin-top: 0px;
+				font-size: 17px;
+				font-weight: 700;
+				color: @heading;
+			}
+			span {
+				font-size: 15px;
+				font-weight: 900;
+				color: @primary-color;
+				margin-bottom: 0px;
+			}
+			p {
+				margin: 10px 0px 20px 0px;
+			}
+			ul {
+				padding: 0;
+				margin: 0;
+				width: 100%;
+				overflow: hidden;
+				list-style: none;
+				li {
+					display: inline-block;
+					width: 24%;
+					text-align: center;
+					border-right: 3px solid @white;
+					@media (max-width: @screen-sm-max) {
+						width: 23%;
+					}
+					&:last-child {
+						border-right: none;
+					}
+					.item {
+						border-radius: 5px;
+						background-color: @bg-light;
+						padding: 10px 5px;
+						transition: all .3s;
+						&:hover {
+							background-color: @secondary-color;
+							i {
+								color: @heading;
+							}
+							p {
+								color: @heading;
+							}
+						}
+						i {
+							font-size: 11px;
+							text-transform: uppercase;
+							width: 100%;
+							padding-bottom: 5px;
+							float: left;
+						}
+						p {
+							margin-top: 0px;
+							margin-bottom: 3px;
+							font-size: 12px;
+							font-weight: 600;
+							color: @text-color;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+.pagination-content {
+	text-align: left;
+	ul {
+		padding: 0;
+		margin: 0;
+		list-style: none;
+		li {
+			display: inline-block;
+			a {
+				color: @heading;
+				font-size: 12px;
+				font-weight: 700;
+				width: 40px;
+				height: 40px;
+				display: inline-block;
+				text-align: center;
+				line-height: 40px;
+				border-radius: 3px;
+				background-color: @secondary-color;
+				transition: all .3s;
+				&:hover {
+					color: @white;
+					background-color: @primary-color;
+				}
+			}
+			i {
+				font-size: 14px;
+			}
+		}
+		li.active {
+			a {
+				color: @white;
+				background-color: @primary-color;
+			}
+		}
+	}
+}
+
+
+.single-car {
+	.recent-car-content {
+		border-radius: 5px;
+		box-shadow: 0px 0px 20px rgba(0,0,0,0.15);
+		padding: 30px;
+	}
+	#single-car {
+		.sp-fade-full-screen {
+			display: none;
+		}
+	}
+	.car-details {
+		text-align: left;
+		h4 {
+			color: @heading;
+			margin-top: 8px;
+			font-size: 24px;
+			font-weight: 700;
+			@media (max-width: @screen-sm-max) {
+				margin-top: 30px;
+			}
+		}
+		span {
+			font-size: 20px;
+			font-weight: 700;
+			color: @primary-color;
+		}
+		p {
+			margin-top: 20px;
+		}
+		ul.car-info {
+			padding: 10px 0px 20px 0px;
+			width: 50%;
+			margin: 0;
+			list-style: none;
+			li {
+				border-bottom: 1px solid @border-color;
+				width: 100%;
+				display: inline-block;
+				padding: 10px 0px;
+				i {
+					margin-right: 10px;
+					font-size: 10px;
+					text-transform: uppercase;
+					display: inline-block;
+					width: 40px;
+					height: 40px;
+					text-align: center;
+					line-height: 40px;
+					border-radius: 3px;
+					background-color: @secondary-color;
+					color: @heading;
+				}
+				p {
+					display: inline;
+					font-size: 12px;
+					font-weight: 700;
+					color: @heading;
+				}
+			}
+			li:first-child {
+				border-top: 1px solid @border-color;
+			}
+		}
+	}
+}
+
+.more-details {
+	.sep-section-heading {
+		margin-top: 0px;
+	}
+	.item {
+		.info-list { 
+			ul {
+				padding: 0;
+				margin: 0;
+				list-style: none;
+				li {
+					display: inline-block;
+					margin: 0px 20px 18px 0px;
+					i {
+						margin-right: 5px;
+						color: @primary-color;
+					}
+					span {
+						font-size: 13px;
+						font-weight: 400;
+						color: @text-color;
+					}
+				}
+			}
+		}
+		.contact-info {
+			@media (max-width: @screen-sm-max) {
+			  margin-top: 20px;
+			}
+			.phone {
+				margin-top: 10px;
+				margin-bottom: 15px;	
+				@media (max-width: @screen-sm-max) {
+					margin-bottom: 20px;			
+				}
+			}
+			i {
+				width: 40px;
+				height: 40px;
+				background-color: @secondary-color;
+				text-align: center;
+				line-height: 40px;
+				border-radius: 3px;
+				display: inline-block;
+				font-size: 14px;
+				color: @heading;
+				margin-right: 15px;
+
+			}
+			span {
+				font-size: 13px;
+				font-weight: 400;
+				color: @heading;
+				@media (max-width: @screen-sm-max) {
+				  text-align: center;
+				}
+			}
+		}
+	}
+}
+
+
+#owl-similar {
+	.car-item {
+		border: 0px solid @border-color;
+		padding: 0px;
+		margin: 10px;
+		.thumb-content {
+			.car-banner-sale {
+				margin: 0;
+			}
+			.car-banner-rent {
+				margin: 0;
+			}
+		}
+	}
+	.owl-dots {
+		margin-top: 15px;
+		padding-bottom: 0px;
+	}
+}
+
+.owl-carousel .owl-item img {
+	border-top-right-radius: 5px;
+	border-top-left-radius: 5px;
+}
+
+.similar-car {
+	.car-item {
+		margin-bottom: 30px;
+		border-radius: 5px;
+		box-shadow: 0px 0px 20px rgba(0,0,0,0.15);
+		border-bottom: 3px solid transparent;
+		transition: all .3s;
+		&:hover {
+			border-bottom: 3px solid @primary-color;
+		}
+		.thumb-content {
+			position: relative;
+			.car-banner {
+				position: absolute;
+				margin-top: 0px;
+				left: 20px;
+				bottom: -18px;
+				margin-right: 26px;
+				a {
+					background-color: @secondary-color;
+					border-radius: 3px;
+					color: @heading;
+					font-size: 13px;
+					font-weight: 700;
+					text-transform: uppercase;
+					width: 85px;
+					height: 36px;
+					text-align: center;
+					line-height: 36px;
+					display: inline-block;
+				}
+			}
+			.thumb-inner {
+				img {
+					transition: all 0.5s;
+					position: center center;
+					border-top-right-radius: 5px;
+					border-top-left-radius: 5px;
+					width: 100%;
+					overflow: hidden;
+					background-size: cover;
+				}
+			}
+		}
+		.down-content {
+			padding: 20px;
+			text-align: left;
+			h4 {
+				margin-top: 15px;
+				font-size: 17px;
+				font-weight: 700;
+				color: @heading;
+			}
+			span {
+				font-size: 15px;
+				font-weight: 900;
+				color: @primary-color;
+				margin-bottom: 0px;
+			}
+			p {
+				margin: 10px 0px 20px 0px;
+			}
+			ul {
+				padding: 0;
+				margin: 0;
+				width: 100%;
+				overflow: hidden;
+				list-style: none;
+				li {
+					display: inline-block;
+					width: 24%;
+					text-align: center;
+					border-right: 3px solid @white;
+					&:last-child {
+						border-right: none;
+					}
+					.item {
+						border-radius: 5px;
+						background-color: @bg-light;
+						padding: 10px 5px;
+						transition: all .3s;
+						&:hover {
+							background-color: @secondary-color;
+							i {
+								color: @heading;
+							}
+							p {
+								color: @heading;
+							}
+						}
+						i {
+							font-size: 11px;
+							text-transform: uppercase;
+							width: 100%;
+							padding-bottom: 5px;
+							float: left;
+						}
+						p {
+							margin-top: 0px;
+							margin-bottom: 3px;
+							font-size: 12px;
+							font-weight: 600;
+							color: @text-color;
+						}
+					}
+				}
+			}
+		}
+	}
+}
